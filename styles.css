@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+a{
+  text-decoration:none;
+  color:#0FFFF7;
+  
+  font-family: 'Dancing Script', cursive;
+}
+body{
+    
+	background:#151515;
+
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.header{
+    text-align: center;
+    background-color:#bcf5a2;
+    border-bottom:2px solid lightgreen;
+    width: 100%;
+}
+h1{
+    margin: 0;
+    padding: 2vh;
+}
+.placeinfo{
+  
+  background: linear-gradient(#ffdd00 , #fbb034) ;
+    color: #161616;
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    padding: 4vh;
+    border-radius: 10px;
+}
+#userI{
+  
+  color: #0FFFF7;
+text-align: left;
+padding: 5vh;
+width: 80vh;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+td{
+padding: 1vh;
+}
+#pincode, #date{
+background-color: white;
+border: 1px solid grey;
+padding: 1vh;
+border-radius: 2.5px;
+}
+#appointmentbtn{
+    text-align: center;
+}
+#submit{
+background: linear-gradient(#141e30 , #243b55);
+color: white;
+border: 2px solid black;
+padding: 1.5vh;
+border-radius: 2.5px;
+cursor: pointer;
+margin-top: 2vh;
+border-radius: 20px;
+font-family: 'Roboto', sans-serif;
+}
+#citystate{
+text-align: center;
+margin-top: 4vh;
+font-weight: 600;
+font-size: 2.8vh;
+padding: 2vh;
+}
+/* media queries */
+
+@media only screen and (max-width: 768px) and (min-width: 425px){
+    body{
+        margin: 0;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    }
+    .header{
+        text-align: center;
+        background-color:#BCF5A2;
+        border-bottom:2px solid lightgreen;
+        width: 100%;
+    }
+    h1{
+        margin: 0;
+        padding: 2vh;
+        font-size: 4.5vh;
+    }
+    #userI{
+        width: 75vh;
+    }
+    #appointmentbtn{
+        text-align: center;
+    }
+    h3{
+        font-size: 2.9vh;
+    }
+    td{
+        padding: 1vh;
+        font-size: 2vh;
+    }
+    #pincode, #date{
+        background-color: white;
+        border: 1px solid grey;
+        padding: 1vh;
+        border-radius: 2.5px;
+        width: 25vh;
+    }
+    #submit{
+        background-color: white;
+        border: 2px solid black;
+        padding: 1.5vh;
+        border-radius: 2.5px;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 2vh;
+        }
+  }
+
+  @media only screen and (max-width: 425px){
+    #userI{
+        width: 45vh;
+    }
+    .header{
+        text-align: center;
+        width: 100%;
+    }
+    h1{
+        margin: 0;
+        padding: 2vh;
+        font-size: 2.5vh;
+    }
+    h3{
+        font-size: 2.5vh;
+    }
+    td{
+        padding: 1vh;
+        font-size: 2vh;
+    }
+    #appointmentbtn{
+        text-align: center;
+    }
+    #pincode, #date{
+        background-color: white;
+        border: 1px solid grey;
+        padding: 1vh;
+        border-radius: 2.5px;
+        width: 20vh;
+    }
+    .placeinfo{
+        font-size: 2.5vh;
+        max-width: 45vh;
+    }
+    #citystate{
+        font-size: 2.4vh;
+    }
+}      
+
+
+.heading {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 
+    black;
+   /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #8D3AE5, 0 0 20px #8D3AE5, 0 0 25px #8D3AE5, 0 0 30px #8D3AE5, 0 0 35px #8D3AE5;
+  */font-family: 'Roboto', sans-serif;
+}
+
+
+
+.pincode1{
+  
+  padding: 1.4rem;
+  display: flex;
+  
+  color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #FF045C, 0 0 20px #FF045C, 0 0 25px #FF045C, 0 0 30px #FF045C, 0 0 35px #FF045C;
+
+  font-family: 'Roboto', sans-serif;
+}
+  
+
+
+.date1{
+  color: #fff;  
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #E600AB, 0 0 20px #E600AB, 0 0 25px #E600AB, 0 0 30px #E600AB, 0 0
+    35px #E600AB;
+
+  padding: 1rem;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray;
+  text-align: center;
+  padding: 1.5vh;
+  font-size: 2vh;
+}
+
+a {
+  color: #1B1B1B;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*typing*/
+
+
+.head {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #E1A40C;
+  text-shadow: 10px;
+}
