@@ -29,8 +29,8 @@ const app = {
     {
       name: "Galat Fehmi",
       singer: "Asim Azhar and Zenab Fatimah Sultan",
-      path: "../Songs/Galat Fehmi.mp3",
-      image: "../Images/galat.jpeg"
+      path: "Galat Fehmi.mp3",
+      image: "galat.jpeg"
     },
     {
       name: "Baarish Ban Jaana",
