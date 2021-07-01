@@ -35,90 +35,90 @@ const app = {
     {
       name: "Baarish Ban Jaana",
       singer: "Payal Dev & Stebin Ben",
-      path: "../Songs/Baarish Ban Jaana.mp3",
+      path: "Baarish Ban Jaana.mp3",
       image:
-        "../Images/barish ban jana.jpeg"
+        "barish ban jana.jpeg"
     },
     {
       name: "O Khuda ",
       singer: "Amaal Malik & Palak Muchhal",
       path:
-        "../Songs/O Khuda .mp3",
-      image: "../Images/O_khuda.jpg"
+        "O Khuda .mp3",
+      image: "O_khuda.jpg"
     },
     {
       name: "Main Jis Din Bhula Du ",
       singer: "Jubin Nautiyal",
-      path: "../Songs/Mainn Jis Din Bhula Du .mp3",
+      path: "Mainn Jis Din Bhula Du .mp3",
       image:
-        " ../Images/mai jis din12.jpeg"
+        "mai jis din12.jpeg"
     },
     {
       name: "Do You Know",
       singer: "Diljit Dosanjh",
-      path: "../Songs/Do You Know .mp3",
+      path: "Do You Know .mp3",
       image:
-        "../Images/Do you know.jpeg"
+        "Do you know.jpeg"
     },
     {
       name: "Enna Sona",
       singer: "Arijit Singh",
       path:
-        "../Songs/Enna Sona .mp3",
+        "Enna Sona .mp3",
       image:
-        "../Images/ok jaanu.jpeg"
+        "ok jaanu.jpeg"
     },
     {
       name: "Bedardi Se Pyaar Ka",
       singer: "Jubin Nautiyal",
-      path: "../Songs/Bedardi Se Pyaar Ka LYRICS  Jubin Nautiyal.mp3",
+      path: "Bedardi Se Pyaar Ka LYRICS  Jubin Nautiyal.mp3",
       image:
-        "../Images/be dardi.jpg"
+        "be dardi.jpg"
     },
     
     {
       name: "Baatein Ye Kabhi Na",
       singer: "Arijit Singh",
       path:
-        "../Songs/Baatein Ye Kabhi Na KhamoshiyanArijit Singh.mp3",
+        "Baatein Ye Kabhi Na KhamoshiyanArijit Singh.mp3",
       image:
-        "../Images/baatein ye kabhi na.jpg"
+        "baatein ye kabhi na.jpg"
     },
     
     {
       name: "Baarish Ki Jaay image",
       singer: "B Paraak",
       path:
-        "../Songs/Baarish Ki Jaaye.mp3",
+        "Baarish Ki Jaaye.mp3",
       image:
-        "../Images/Baarish Ki Jaay image.jpeg"
+        "Baarish Ki Jaay image.jpeg"
     },
     
     {
       name: "pal",
       singer: "Arijit Singh",
       path:
-        "../Songs/Pal  Arijit Singh .mp3",
+        "Pal  Arijit Singh .mp3",
       image:
-        "../Images/pal.jpeg"
+        "pal.jpeg"
     },
     
     {
       name: "BANJARA ",
       singer: "Mohd. Irfan",
       path:
-        "../Songs/BANJARA .mp3",
+        "BANJARA .mp3",
       image:
-        "../Images/banjaara.jpeg"
+        "banjaara.jpeg"
     },
     
     {
       name: "Backbone",
       singer: "Harrdy Sandhu",
       path:
-        "../Songs/Harrdy Sandhu  Backbone .mp3",
+        "Harrdy Sandhu  Backbone .mp3",
       image:
-        "../Images/Backbone.jpg"
+        "Backbone.jpg"
     },
   ],
   setConfig: function (key, value) {
