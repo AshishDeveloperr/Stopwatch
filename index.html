@@ -42,12 +42,12 @@
           myFun('booted up sir');
         }
         if (work == 'who is your boss') {
-          myFun('Ashish');
+          myFun('My boss is Aashish and Aditya');
         } else if (work == 'are you my assistant') {
-          myFun("I am Ashish's assistant, well I work for everybody");
+          myFun("I am Aashish and Aditya's assistant, well I work for everybody");
         } else if (work == "what's your birthday") {
           myFun(
-            'well well well, I am an AI (artificial assistant) made by Ashish, my birthday is 10 feb 2021'
+            'well well well, I am an AI (artificial assistant) made by Aashish and Aditya, my birthday is 10 feb 2021'
           );
         } else if (work.includes('ok thank you')) {
           myFun('my pleasure sir');
@@ -159,7 +159,7 @@
           myFun('opening speedtest.net for speed checking sir');
           window.open('https://www.speedtest.net');
         } else if (work == 'info') {
-          myFun('I am jarvis and is made by Ashish the great');
+          myFun('I am jarvis and is made by Aashish and Aditya the great');
         } else if (work == "today is my mom's birthday") {
           const reading = new SpeechSynthesisUtterance();
 
@@ -171,13 +171,13 @@
 
           window.speechSynthesis.speak(reading);
         } else if (work == 'your info') {
-          myFun('I am jarvis and is made by Ashish the great');
+          myFun('I am jarvis and is made by Aashish and Aditya the great');
         } else if (work == 'nice') {
           myFun('My pleasure');
         } else if (work == 'very nice') {
           myFun('My pleasure');
         } else if (work == 'you are nice') {
-          myFun('ya I am, as I am made by Ashish');
+          myFun('ya I am, as I am made by Aashish and Aditya');
         } else if (work.includes('i am')) {
           const name = work.replace('i am', '');
           myFun('nice to meet you' + ' ' + name + 'sir');
