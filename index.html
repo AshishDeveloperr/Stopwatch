@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jarvis</title>
+  </head>
+  <body>
+    <div class="outer">
+      <button>Start</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+      const button = document.querySelector('button');
+      const SeechRecognization =
+        window.SpeechRecognition || window.webkitSpeechRecognition;
+      const speech = new SeechRecognization();
+
+      const timeNow = new Date().getHours();
+
+      speech.onresult = function (e) {
+        button.innerHTML = 'Start';
+        button.classList.remove('transform');
+        const transcript = e.results[0][0].transcript;
+
+        const work = transcript.toLowerCase();
+
+        const channels = [
+          'https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ',
+          'https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q',
+          'https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw',
+        ];
+
+        const randomRumber = Math.floor(Math.random() * 3);
+
+        const randomChannel = channels[randomRumber];
+
+        if (work == 'boot up') {
+          myFun('booted up sir');
+        }
+        if (work == 'who is your boss') {
+          myFun('Ashish');
+        } else if (work == 'are you my assistant') {
+          myFun("I am Ashish's assistant, well I work for everybody");
+        } else if (work == "what's your birthday") {
+          myFun(
+            'well well well, I am an AI (artificial assistant) made by Ashish, my birthday is 10 feb 2021'
+          );
+        } else if (work.includes('ok thank you')) {
+          myFun('my pleasure sir');
+        } else if (work == 'jarvis') {
+          myFun('yes sir');
+        } else if (work == 'hello') {
+          if (timeNow < 11 || timeNow == 11) {
+            myFun('good morning sir');
+          } else if ((timeNow > 11 && timeNow < 17) || timeNow == 17) {
+            myFun('good afternoon sir');
+          } else if ((timeNow > 17 && timeNow < 22) || timeNow == 22) {
+            myFun('good evening sir');
+          } else if (timeNow > 22) {
+            myFun('good evening sir, but you should go to bed sir');
+          }
+        } else if (work == 'hello jarvis') {
+          if (timeNow < 11 || timeNow == 11) {
+            myFun('good morning sir');
+          } else if ((timeNow > 11 && timeNow < 17) || timeNow == 17) {
+            myFun('good afternoon sir');
+          } else if ((timeNow > 17 && timeNow < 22) || timeNow == 22) {
+            myFun('good evening sir');
+          } else if (timeNow > 22) {
+            myFun('good evening sir, but you should go to bed sir');
+          }
+        } else if (work == 'good morning') {
+          if (timeNow < 11 || timeNow == 11) {
+            myFun('good morning sir');
+          } else if ((timeNow > 11 && timeNow < 17) || timeNow == 17) {
+            myFun("good afternoon sir, sir but it's after noon");
+          } else if ((timeNow > 17 && timeNow < 22) || timeNow == 22) {
+            myFun("good evening sir, sir but it's evening");
+          } else if (timeNow > 22) {
+            myFun('good evening sir, but you should go to bed sir');
+          }
+        } else if (work == 'good afternoon') {
+          if (timeNow < 11 || timeNow == 11) {
+            myFun("good morning sir, sir but it's morning");
+          } else if ((timeNow > 11 && timeNow < 17) || timeNow == 17) {
+            myFun('good afternoon sir');
+          } else if ((timeNow > 17 && timeNow < 22) || timeNow == 22) {
+            myFun("good evening sir, sir but it's evening");
+          } else if (timeNow > 22) {
+            myFun('good evening sir, but you should go to bed sir');
+          }
+        } else if (work == 'good evening') {
+          if (timeNow < 11 || timeNow == 11) {
+            myFun("good morning sir, sir but it's morning");
+          } else if ((timeNow > 11 && timeNow < 17) || timeNow == 17) {
+            myFun("good afternoon sir, sir but it's after noon");
+          } else if ((timeNow > 17 && timeNow < 22) || timeNow == 22) {
+            myFun('good evening sir');
+          } else if (timeNow > 22) {
+            myFun('good evening sir, but you should go to bed sir');
+          }
+        } else if (work == 'good morning jarvis') {
+          if (timeNow < 11 || timeNow == 11) {
+            myFun('good morning sir');
+          } else if ((timeNow > 11 && timeNow < 17) || timeNow == 17) {
+            myFun("good afternoon sir, sir but it's after noon");
+          } else if ((timeNow > 17 && timeNow < 22) || timeNow == 22) {
+            myFun("good evening sir, sir but it's evening");
+          } else if (timeNow > 22) {
+            myFun('good evening sir, but you should go to bed sir');
+          }
+        } else if (work == 'good afternoon jarvis') {
+          if (timeNow < 11 || timeNow == 11) {
+            myFun("good morning sir, sir but it's morning");
+          } else if ((timeNow > 11 && timeNow < 17) || timeNow == 17) {
+            myFun('good afternoon sir');
+          } else if ((timeNow > 17 && timeNow < 22) || timeNow == 22) {
+            myFun("good evening sir, sir but it's evening");
+          } else if (timeNow > 22) {
+            myFun('good evening sir, but you should go to bed sir');
+          }
+        } else if (work == 'good evening jarvis') {
+          if (timeNow < 11 || timeNow == 11) {
+            myFun("good morning sir, sir but it's morning");
+          } else if ((timeNow > 11 && timeNow < 17) || timeNow == 17) {
+            myFun("good afternoon sir, sir but it's after noon");
+          } else if ((timeNow > 17 && timeNow < 22) || timeNow == 22) {
+            myFun('good evening sir');
+          } else if (timeNow > 22) {
+            myFun('good evening sir, but you should go to bed sir');
+          }
+        } else if (work == 'boot up jarvis') {
+          myFun('booted up sir');
+        } else if (work == "what's the time") {
+          myFun(new Date().toLocaleTimeString());
+        } else if (work == "what's the time jarvis") {
+          myFun(new Date().toLocaleTimeString());
+        } else if (work == "let's do some work") {
+          myFun('booted up sir');
+        } else if (work == 'open new tab') {
+          myFun('opening new tab sir');
+          window.open('/');
+        } else if (work == 'help me') {
+          myFun('what can I do for you sir');
+        } else if (work == "help me in my homework's") {
+          myFun('opening topper sir');
+          window.open('https://www.topper.com');
+        } else if (work == 'help me in my homework') {
+          myFun('opening topper sir');
+          window.open('https://www.ontimesmm.in');
+        } else if (work == 'check my internet speed') {
+          myFun('opening speedtest.net for speed checking sir');
+          window.open('https://www.speedtest.net');
+        } else if (work == 'check my internet speed jarvis') {
+          myFun('opening speedtest.net for speed checking sir');
+          window.open('https://www.speedtest.net');
+        } else if (work == 'info') {
+          myFun('I am jarvis and is made by Ashish the great');
+        } else if (work == "today is my mom's birthday") {
+          const reading = new SpeechSynthesisUtterance();
+
+          reading.text =
+            'Happy birthday mamm, I have a song especially for you, Happy birthday to you, Happy birthday to you, Happy birthday to you dear Shweta, may the good god bless you, may the good god bless you dear shweta, I know I sing bad but how was it?';
+          reading.pitch = 1;
+          reading.volume = 1;
+          reading.rate = 1;
+
+          window.speechSynthesis.speak(reading);
+        } else if (work == 'your info') {
+          myFun('I am jarvis and is made by Ashish the great');
+        } else if (work == 'nice') {
+          myFun('My pleasure');
+        } else if (work == 'very nice') {
+          myFun('My pleasure');
+        } else if (work == 'you are nice') {
+          myFun('ya I am, as I am made by Ashish');
+        } else if (work.includes('i am')) {
+          const name = work.replace('i am', '');
+          myFun('nice to meet you' + ' ' + name + 'sir');
+        } else if (work == 'open youtube best programming channel') {
+          myFun('opening any of the best programming channel sir');
+          window.open(randomChannel + '/videos');
+        } else if (work == 'open youtube best programming channels') {
+          myFun('opening any of the best programming channel sir');
+          window.open(randomChannel + '/videos');
+        } else if (work.includes('open localhost at port')) {
+          const url = work.replace('open localhost at port ', '');
+          myFun('opening localhost at port ' + url + ' sir');
+          window.open('http://localhost:' + url);
+        } else if (work.includes('search wikipedia for')) {
+          const url = work.replace('search wikipedia for', '');
+          myFun('searching wikipedia for ' + url + ' sir');
+          window.open('https://en.wikipedia.org/wiki/' + url);
+        } else if (work.includes('open youtube and search for')) {
+          const url = work.replace('open youtube and search for', '');
+          myFun('searching youtube for ' + url + ' sir');
+          window.open('https://www.youtube.com/results?search_query=' + url);
+        } else if (work.includes('search youtube for')) {
+          const url = work.replace('search youtube for', '');
+          myFun('searching youtube for ' + url + ' sir');
+          window.open('https://www.youtube.com/results?search_query=' + url);
+        } else if (work.includes('search google for')) {
+          const url = work.replace('search google for', '');
+          myFun('searching google for ' + url + ' sir');
+          window.open(
+            `https://www.google.com/search?q=${url}&oq=hi&aqs=chrome..69i57j35i39j69i59j35i39j0i433j69i60l3.3102j0j9&sourceid=chrome&ie=UTF-8`
+          );
+        } else if (work.includes('open')) {
+          const url = work.replace('open', '');
+          const secondUrl = url.replace(' ', '');
+          const thirdUrl = secondUrl.replace(' dot ', '.');
+          myFun('opening ' + url + ' sir');
+          window.open('https://' + thirdUrl);
+        } else {
+          myFun(`searching google for ${transcript} sir`);
+          window.open(
+            `https://www.google.com/search?q=${work}&oq=hi&aqs=chrome..69i57j35i39j69i59j35i39j0i433j69i60l3.3102j0j9&sourceid=chrome&ie=UTF-8`
+          );
+        }
+
+        function myFun(speechToSay) {
+          const reading = new SpeechSynthesisUtterance();
+
+          reading.text = speechToSay;
+          reading.pitch = 1;
+          reading.volume = 1;
+          reading.rate = 1;
+
+          window.speechSynthesis.speak(reading);
+        }
+      };
+
+      button.addEventListener('click', function () {
+        speech.start();
+        button.innerHTML = 'Listening';
+        button.classList.add('transform');
+      });
+    </script>
+  </body>
+</html>
