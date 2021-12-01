@@ -1,4 +1,3 @@
-<!--Designed and Developed by Ashish-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Jarvis</title>
+    <title>Jarvis- Ashish and Aditya</title>
   </head>
   <body>
     <div class="outer">
@@ -32,26 +31,28 @@
         const channels = [
           'https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ',
           'https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q',
-          'https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw',
+          'https://youtu.be/5a-TqsbuXzg',
         ];
 
         const randomRumber = Math.floor(Math.random() * 3);
 
         const randomChannel = channels[randomRumber];
 
-        if (work == 'boot up') {
-          myFun('booted up sir');
+        if (work == 'wake up') {
+          myFun('hello sir good morning.');
         }
         if (work == 'who is your boss') {
-          myFun('My boss is Aashish and Aditya');
+          myFun('Aashish and Aditya');
         } else if (work == 'are you my assistant') {
           myFun("I am Aashish and Aditya's assistant, well I work for everybody");
         } else if (work == "what's your birthday") {
           myFun(
-            'well well well, I am an AI (artificial assistant) designed and developed by Aashish and Aditya, my birthday is 29 November 2021'
+            'well well well, I am an AI (artificial assistant) designed and developed by Aashish and Aditya, my birthday is  29 November 2021'
           );
         } else if (work.includes('ok thank you')) {
           myFun('my pleasure sir');
+        } else if (work.includes('Information about Shakti Maam')) {
+          myFun('Getting information from Rasphilacademy.com . ');
         } else if (work == 'jarvis') {
           myFun('yes sir');
         } else if (work == 'hello') {
@@ -141,18 +142,18 @@
         } else if (work == "what's the time jarvis") {
           myFun(new Date().toLocaleTimeString());
         } else if (work == "let's do some work") {
-          myFun('booted up sir');
+          myFun('Sure sir, how may I help you');
         } else if (work == 'open new tab') {
           myFun('opening new tab sir');
           window.open('/');
         } else if (work == 'help me') {
           myFun('what can I do for you sir');
         } else if (work == "help me in my homework's") {
-          myFun('opening topper sir');
-          window.open('https://www.topper.com');
+          myFun('opening Apni Kaksha  sir');
+          window.open('https://www.apnikaksha.net');
         } else if (work == 'help me in my homework') {
-          myFun('opening topper sir');
-          window.open('https://www.ontimesmm.in');
+          myFun('opening Apni Kaksha sir');
+          window.open('https://www.apnikaksha.net');
         } else if (work == 'check my internet speed') {
           myFun('opening speedtest.net for speed checking sir');
           window.open('https://www.speedtest.net');
@@ -160,7 +161,7 @@
           myFun('opening speedtest.net for speed checking sir');
           window.open('https://www.speedtest.net');
         } else if (work == 'info') {
-          myFun('I am jarvis and is made by Aashish and Aditya the great');
+          myFun('I am jarvis and i am developed by Aashish and Aditya with the help of Shakti Maam');
         } else if (work == "today is my mom's birthday") {
           const reading = new SpeechSynthesisUtterance();
 
@@ -171,14 +172,14 @@
           reading.rate = 1;
 
           window.speechSynthesis.speak(reading);
-        } else if (work == 'your info') {
-          myFun('I am jarvis and is made by Aashish and Aditya the great');
+        } else if (work == 'Who are you') {
+          myFun('I am jarvis and i am developed by Aashish and Aditya with the help of Shakti Maam');
         } else if (work == 'nice') {
           myFun('My pleasure');
         } else if (work == 'very nice') {
           myFun('My pleasure');
         } else if (work == 'you are nice') {
-          myFun('ya I am, as I am made by Aashish and Aditya');
+          myFun("That's nice to hear, but my developers are greate. ");
         } else if (work.includes('i am')) {
           const name = work.replace('i am', '');
           myFun('nice to meet you' + ' ' + name + 'sir');
