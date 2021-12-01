@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: #141526;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.outer {
+  width: 27rem;
+  height: 27rem;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: animate 5s infinite linear;
+}
+button {
+  width: 94%;
+  height: 94%;
+  border-radius: 50%;
+  outline: none;
+  background: url('photo_2021-02-14_09-05-16.jpg');
+  background-size: cover;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  border: none;
+  position: relative;
+}
+button::after {
+  content: '';
+  position: absolute;
+  height: 27rem;
+  transform: translate(-60%, -44%);
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+button:hover::after {
+  width: 27rem;
+  background: rgb(113 113 113 / 41%);
+}
+@keyframes animate {
+  0% {
+    background: linear-gradient(#217eb3, #2ac8c4);
+    transition: 0.3s background linear;
+  }
+  50% {
+    background: blue;
+    transition: 0.3s background linear;
+  }
+  100% {
+    background: green;
+    transition: 0.3s background linear;
+  }
+}
+.transform::after {
+  transform: translate(-67.5%, -43%);
+}
