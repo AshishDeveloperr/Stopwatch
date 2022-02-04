@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Alexa- Ashish and Aditya</title>
+    <title>Jarvis- Ashish and Aditya</title>
   </head>
   <body>
     <div class="outer">
@@ -47,13 +47,13 @@
           myFun("I am Aashish and Aaditya's assistant, well I work for everybody");
         } else if (work == "what's your birthday") {
           myFun(
-            'well well well, I am an AI (artificial assistant) designed and developed by Aashish and Aaditya, my birthday is  29 November 2021'
+            'well well well, I am an AI (artificial assistant), designed and developed by Aashish and Aaditya, my birthday is  22 january 2022'
           );
         } else if (work.includes('ok thank you')) {
           myFun('my pleasure sir');
         } else if (work.includes('Information about Shakti Maam')) {
           myFun('Getting information from Rasphilacademy.com . ');
-        } else if (work == 'alexa') {
+        } else if (work == 'jarvis') {
           myFun('yes sir');
         } else if (work == 'hello') {
           if (timeNow < 11 || timeNow == 11) {
@@ -65,7 +65,7 @@
           } else if (timeNow > 22) {
             myFun('good evening sir, but you should go to bed sir');
           }
-        } else if (work == 'hello alexa') {
+        } else if (work == 'hello jarvis') {
           if (timeNow < 11 || timeNow == 11) {
             myFun('good morning sir');
           } else if ((timeNow > 11 && timeNow < 17) || timeNow == 17) {
@@ -102,10 +102,10 @@
             myFun("good afternoon sir, sir but it's after noon");
           } else if ((timeNow > 17 && timeNow < 22) || timeNow == 22) {
             myFun('good evening sir');
-          } else if (timeNow > 22) {
+          } else if (timeNow > 20) {
             myFun('good evening sir, but you should go to bed sir');
           }
-        } else if (work == 'good morning alexa') {
+        } else if (work == 'good morning jarvis') {
           if (timeNow < 11 || timeNow == 11) {
             myFun('good morning sir');
           } else if ((timeNow > 11 && timeNow < 17) || timeNow == 17) {
@@ -115,7 +115,7 @@
           } else if (timeNow > 22) {
             myFun('good evening sir, but you should go to bed sir');
           }
-        } else if (work == 'good afternoon alexa') {
+        } else if (work == 'good afternoon jarvis') {
           if (timeNow < 11 || timeNow == 11) {
             myFun("good morning sir, sir but it's morning");
           } else if ((timeNow > 11 && timeNow < 17) || timeNow == 17) {
@@ -125,7 +125,7 @@
           } else if (timeNow > 22) {
             myFun('good evening sir, but you should go to bed sir');
           }
-        } else if (work == 'good evening alexa') {
+        } else if (work == 'good evening jarvis') {
           if (timeNow < 11 || timeNow == 11) {
             myFun("good morning sir, sir but it's morning");
           } else if ((timeNow > 11 && timeNow < 17) || timeNow == 17) {
@@ -135,11 +135,11 @@
           } else if (timeNow > 22) {
             myFun('good evening sir, but you should go to bed sir');
           }
-        } else if (work == 'boot up alexa') {
+        } else if (work == 'boot up jarvis') {
           myFun('booted up sir');
         } else if (work == "what's the time") {
           myFun(new Date().toLocaleTimeString());
-        } else if (work == "what's the time alexa") {
+        } else if (work == "what's the time jarvis") {
           myFun(new Date().toLocaleTimeString());
         } else if (work == "let's do some work") {
           myFun('Sure sir, how may I help you');
@@ -161,13 +161,13 @@
           myFun('opening speedtest.net for speed checking sir');
           window.open('https://www.speedtest.net');
         } else if (work == 'info') {
-          myFun('I am alexa and i am developed by Aashish and Aaditya with the help of Shakti Maam');
+          myFun('I am jarvis and i am developed by Aashish and Aaditya with the help of Shakti Maam');
         }else if (work == 'what are you doing') {
           myFun('I was reading some fascinating things on internet');
         }else if (work == 'do you know me') {
           myFun('Yeah, you are Aaditya. My boss and my developer.');
         }else if (work == 'who are you') {
-          myFun('I am alexa and i am developed by Aashish and Aaditya with the help of Shakti Maam');
+          myFun('I am jarvis and i am developed by Aashish and Aaditya with the help of Shakti Maam');
         }else if (work == 'get weather report') {
           myFun('Aaditya sir, the weather in atarra, banda, is 15 degrees celcius with scattered clouds.');
         }else if (work == "today is my mom's birthday") {
@@ -181,7 +181,7 @@
 
           window.speechSynthesis.speak(reading);
         } else if (work == 'Who are you') {
-          myFun('I am alexa and i am developed by Aashish and Aditya with the help of Shakti Maam');
+          myFun('I am jarvis and i am developed by Aashish and Aditya with the help of Shakti Maam');
         } else if (work == 'nice') {
           myFun('My pleasure');
         } else if (work == 'very nice') {
