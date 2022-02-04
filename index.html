@@ -215,7 +215,10 @@
           const url = work.replace('search youtube for', '');
           myFun('searching youtube for ' + url + ' sir');
           window.open('https://www.youtube.com/results?search_query=' + url);
-        } else if (work.includes('search google for')) {
+        } else if (work.includes('play song on youtube')) {
+          myFun('Playing brown munde on youtube');
+          window.open('https://www.youtube.com/watch?v=VNs_cCtdbPc'); 
+        }else if (work.includes('search google for')) {
           const url = work.replace('search google for', '');
           myFun('searching google for ' + url + ' sir');
           window.open(
